@@ -23,8 +23,8 @@ public class RangeMapDAO {
                 "limit 1000000";
         sql = sql.replace("startLatitude", String.valueOf(rangeMapInfo.getStartLatitude()));
         sql = sql.replace("endLatitude", String.valueOf(rangeMapInfo.getEndLatitude()));
-        sql = sql.replace("startLongitude", String.valueOf(rangeMapInfo.getStartLongtitude()));
-        sql = sql.replace("endLongitude", String.valueOf(rangeMapInfo.getEndLongtitude()));
+        sql = sql.replace("startLongitude", String.valueOf(rangeMapInfo.getStartLongitude()));
+        sql = sql.replace("endLongitude", String.valueOf(rangeMapInfo.getEndLongitude()));
 
         //
         List<AddressVO> mapVoList = new ArrayList<>();
@@ -37,7 +37,7 @@ public class RangeMapDAO {
             while (resultSet.next()) {
                 double longitude = resultSet.getDouble("longitude");
                 double latitude = resultSet.getDouble("latitude");
-                mapVoList.add(new AddressVO(latitude,longitude));
+                mapVoList.add(new AddressVO(latitude, longitude));
             }
         } catch (Exception e) {
             e.printStackTrace();

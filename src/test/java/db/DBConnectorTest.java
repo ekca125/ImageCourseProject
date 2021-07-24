@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.sql.SQLException;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class DBConnectorTest {
 
@@ -12,7 +12,7 @@ class DBConnectorTest {
     void getConnection() {
         DBConnector dbConnector = new DBConnector();
         try {
-            assertTrue(dbConnector.getConnection()!=null);
+            assertTrue(dbConnector.getConnection() != null);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }

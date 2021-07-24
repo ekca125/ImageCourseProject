@@ -2,37 +2,38 @@ package data;
 
 public class RangeMapInfo {
     private final double startLatitude;
-    private final double startLongtitude;
+    private final double startLongitude;
     private final double endLatitude;
-    private final double endLongtitude;
+    private final double endLongitude;
+
     private RangeMapInfo(double startLatitude,
-                         double startLongtitude,
+                         double startLongitude,
                          double endLatitude,
-                         double endLongtitude) {
+                         double endLongitude) {
         this.startLatitude = startLatitude;
-        this.startLongtitude = startLongtitude;
+        this.startLongitude = startLongitude;
         this.endLatitude = endLatitude;
-        this.endLongtitude = endLongtitude;
+        this.endLongitude = endLongitude;
     }
 
     public double getEndLatitude() {
         return endLatitude;
     }
 
-    public double getEndLongtitude() {
-        return endLongtitude;
+    public double getEndLongitude() {
+        return endLongitude;
     }
 
     public double getStartLatitude() {
         return startLatitude;
     }
 
-    public double getStartLongtitude() {
-        return startLongtitude;
+    public double getStartLongitude() {
+        return startLongitude;
     }
 
     public double getStartX() {
-        return startLongtitude;
+        return startLongitude;
     }
 
     public double getStartY() {
@@ -40,7 +41,7 @@ public class RangeMapInfo {
     }
 
     public double getEndX() {
-        return endLongtitude;
+        return endLongitude;
     }
 
     public double getEndY() {
@@ -57,51 +58,51 @@ public class RangeMapInfo {
 
     public static class Builder {
         double startLatitude;
-        double startLongtitude;
+        double startLongitude;
         double endLatitude;
-        double endLongtitude;
+        double endLongitude;
 
-        public Builder(){
-            startLatitude=-1;
-            startLongtitude=-1;
-            endLatitude=-1;
-            endLongtitude=-1;
+        public Builder() {
+            startLatitude = -1;
+            startLongitude = -1;
+            endLatitude = -1;
+            endLongitude = -1;
         }
 
         public void setStartLatitude(double startLatitude) {
             this.startLatitude = startLatitude;
         }
 
-        public void setStartLongtitude(double startLongtitude) {
-            this.startLongtitude = startLongtitude;
+        public void setStartLongitude(double startLongitude) {
+            this.startLongitude = startLongitude;
         }
 
         public void setEndLatitude(double endLatitude) {
             this.endLatitude = endLatitude;
         }
 
-        public void setEndLongtitude(double endLongtitude) {
-            this.endLongtitude = endLongtitude;
+        public void setEndLongitude(double endLongitude) {
+            this.endLongitude = endLongitude;
         }
 
-        public RangeMapInfo build() throws IllegalArgumentException{
-            if(startLatitude==-1
-            ||startLongtitude==-1
-            ||endLongtitude==-1
-            ||endLatitude==-1){
+        public RangeMapInfo build() throws IllegalArgumentException {
+            if (startLatitude == -1
+                    || startLongitude == -1
+                    || endLongitude == -1
+                    || endLatitude == -1) {
                 throw new IllegalArgumentException();
             }
 
-            if(startLatitude>endLatitude
-            ||startLongtitude>endLongtitude){
+            if (startLatitude > endLatitude
+                    || startLongitude > endLongitude) {
                 throw new IllegalArgumentException();
             }
 
             return new RangeMapInfo(
                     startLatitude,
-                    startLongtitude,
+                    startLongitude,
                     endLatitude,
-                    endLongtitude
+                    endLongitude
             );
         }
     }

@@ -2,8 +2,6 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class CompressSnappyResultBase64Test {
 
     @Test
@@ -24,10 +22,10 @@ class CompressSnappyResultBase64Test {
     }
 
     @Test
-    void fulltest(){
+    void fulltest() {
 
         try {
-            String a= "abcd";
+            String a = "abcd";
             String compress = CompressSnappyResultBase64.compress(a);
             String uncompress = CompressSnappyResultBase64.uncompress(compress);
             System.out.println(a);

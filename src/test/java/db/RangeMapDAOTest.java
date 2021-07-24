@@ -6,14 +6,14 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 import java.util.function.Predicate;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class RangeMapDAOTest {
-    Predicate<AddressVO> getPredicate(RangeMapInfo rangeMapInfo){
-        return a->rangeMapInfo.getStartLatitude() <= a.getLatitude()
+    Predicate<AddressVO> getPredicate(RangeMapInfo rangeMapInfo) {
+        return a -> rangeMapInfo.getStartLatitude() <= a.getLatitude()
                 && a.getLatitude() <= rangeMapInfo.getEndLatitude()
-                && rangeMapInfo.getStartLongtitude() <= a.getLongitude()
-                && a.getLongitude() <= rangeMapInfo.getEndLongtitude();
+                && rangeMapInfo.getStartLongitude() <= a.getLongitude()
+                && a.getLongitude() <= rangeMapInfo.getEndLongitude();
     }
 
 
@@ -22,8 +22,8 @@ class RangeMapDAOTest {
         RangeMapInfo.Builder builder = new RangeMapInfo.Builder();
         builder.setStartLatitude(37.548358);
         builder.setEndLatitude(37.549358);
-        builder.setStartLongtitude(126.865974);
-        builder.setEndLongtitude(126.866974);
+        builder.setStartLongitude(126.865974);
+        builder.setEndLongitude(126.866974);
         RangeMapInfo rangeMapInfo = builder.build();
         RangeMapDAO rangeMapDAO = new RangeMapDAO(rangeMapInfo);
         List<AddressVO> addressVOList = rangeMapDAO.getData();
