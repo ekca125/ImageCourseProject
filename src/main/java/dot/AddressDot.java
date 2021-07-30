@@ -33,4 +33,12 @@ public class AddressDot extends BaseDot {
     public int hashCode() {
         return Objects.hash(longitude, latitude);
     }
+
+    @Override
+    public String toString() {
+        return "AddressDot{" +
+                "longitude=" + longitude +
+                ", latitude=" + latitude +
+                '}';
+    }
 }

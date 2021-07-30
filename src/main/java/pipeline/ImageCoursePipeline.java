@@ -41,7 +41,7 @@ public class ImageCoursePipeline {
                 .distinct()
                 .collect(Collectors.toList());
     }
-    public class PipelineBuilder {
+    public static class PipelineBuilder {
         //default values
         private static final int IMAGE_WIDTH = 1000;
         private static final int IMAGE_HEIGHT = 1000;
