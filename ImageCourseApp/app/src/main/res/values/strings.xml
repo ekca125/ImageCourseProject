@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ImageCourseApp</string>
+    <string name="course_continue">재시작</string>
+    <string name="course_record_check">기록확인</string>
+    <string name="image_course_mod">이미지 코스</string>
+    <string name="sketchbook_mod">스케치북</string>
+    <string name="new_start">새로 시작</string>
+</resources>
