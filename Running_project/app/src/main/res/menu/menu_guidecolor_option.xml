@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/guidecolor_black"
+        android:title="Black" />
+    <item
+        android:id="@+id/guidecolor_red"
+        android:title="Red" />
+    <item
+        android:id="@+id/guidecolor_blue"
+        android:title="Blue" />
+    <item
+        android:id="@+id/nomarker_option"
+        android:title="nomarker_test" />
+    <item
+        android:id="@+id/nocourse_option"
+        android:title="nocourse_test" />
+</menu>

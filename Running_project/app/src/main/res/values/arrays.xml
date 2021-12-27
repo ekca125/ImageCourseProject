@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_voice">
+        <item>아이 목소리</item>
+        <item>여성 목소리</item>
+        <item>남성 목소리</item>
+    </string-array>
+</resources>

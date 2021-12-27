@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/timelaps_speed_05"
+        android:title="0.5x" />
+    <item
+        android:id="@+id/timelaps_speed_1"
+        android:title="1x" />
+    <item
+        android:id="@+id/timelaps_speed_2"
+        android:title="2x" />
+    <item
+        android:id="@+id/timelaps_speed_3"
+        android:title="3x" />
+    <item
+        android:id="@+id/timelaps_speed_4"
+        android:title="4x" />
+    <item
+        android:id="@+id/timelaps_all"
+        android:title="전체" />
+</menu>

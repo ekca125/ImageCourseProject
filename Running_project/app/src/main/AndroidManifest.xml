@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trainer.courserunner">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Application.ApplicationBoot"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CourseRunner">
+        <activity android:name=".MainStartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="hzqct6qd8n" />
+
+        <activity android:name=".PrepareActivity">
+
+        </activity>
+        <activity android:name=".ExerciseResultsActivity" />
+        <activity android:name=".MissionActivity" />
+        <activity android:name=".SamsungHealthSetting" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".runactivity.papermap.NavermapActivity" />
+        <activity android:name=".runactivity.papermap.NavermapLocationActivity" />
+        <activity android:name=".runactivity.set.RunningProjectRecordActivity" />
+        <activity android:name=".runactivity.set.RunningActivity" />
+        <activity android:name=".runactivity.set.RunningImageSelectionActivity" />
+        <activity android:name=".runactivity.set.RunningDistanceActivity" />
+        <activity android:name=".runactivity.run.ProjectRunnerActivity" />
+        <activity android:name=".runactivity.run.CourseConductorActivity" />
+        <activity android:name=".runactivity.run.GuideRunnerActivity" />
+        <activity android:name=".runactivity.run.SketchBookRunnerActivity" />
+        <activity android:name=".runactivity.set.RunningProject" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MissionActivity" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".UserSetActivity" />
+        <activity android:name=".runactivity.record.TimelapsActivity" />
+        <activity android:name=".runactivity.record.RecordListActivity" />
+    </application>
+
+</manifest>

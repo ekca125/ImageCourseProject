@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "758083171719",
+    "project_id": "courserunner-7eaa1",
+    "storage_bucket": "courserunner-7eaa1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758083171719:android:c467eaaddc5aac6e950f22",
+        "android_client_info": {
+          "package_name": "com.trainer.courserunner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758083171719-iqqsmo6o9fe4iflsut7fni2qndr6k93g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvNIH13arNt7K4Z-CRCyNz1e76FqGqP3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758083171719-iqqsmo6o9fe4iflsut7fni2qndr6k93g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

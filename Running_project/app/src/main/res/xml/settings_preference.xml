@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="개인정보 설정">
+        <EditTextPreference
+            android:key="name"
+            android:summary=" "
+            android:title="이름" />
+        <EditTextPreference
+            android:key="email"
+            android:summary=" "
+            android:title="이메일" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="효과음 설정">
+        <!--
+        <SwitchPreference
+            android:key="sound"
+            android:summary="사용안함"
+            android:title="효과음" />
+        -->
+        <ListPreference
+            android:entries="@array/array_voice"
+            android:entryValues="@array/array_voice"
+            android:key="sound_list"
+            android:summary="여성 목소리"
+            android:title="안내음" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

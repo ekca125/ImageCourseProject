@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D000000"
+    tools:context=".ExerciseResultsActivity">
+
+    <EditText
+        android:id="@+id/input_calorie"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calorie"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@+id/calorie"
+        android:ems="10"
+        android:inputType="number"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="233dp"
+        android:text="이동거리"
+        android:textSize="20dp"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/input_distance"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/distance"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@+id/calorie"
+        android:ems="10"
+        android:inputType="number"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="333dp"
+        android:text="이동 시간"
+        android:textSize="20dp"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/input_time"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/time"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@+id/calorie"
+        android:ems="10"
+        android:inputType="number"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/calorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/distance"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="265dp"
+        android:text="소비 칼로리"
+        android:textSize="20dp"
+        tools:ignore="RtlCompat" />
+
+</RelativeLayout>
